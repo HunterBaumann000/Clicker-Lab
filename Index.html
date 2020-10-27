@@ -6,20 +6,27 @@
 </head>
 <body>
 
-<button id="push" onclick="num++">Click This Button to Add One!</button>
+<button id="clickbtn" onclick="addOne()">Click This Button to Add One!</button>
 
 <br> <br>
 
-<button onclick="alert()">Click This Button to See Your Score!</button>
+<button id="scorebtn" onclick="Score()">Click This Button to See Score!</button>
 
 <script>
 
     var num = 0;
 
-    function alert() {
-        window.alert("num");
+    function addOne() {
+        num++;
     }
 
+    function Score() {
+        window.alert(num);
+    }
+
+
+
 </script>
+
 </body>
 </html>
