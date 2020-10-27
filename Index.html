@@ -7,14 +7,22 @@
 <body>
 <button onclick="addOne()">Click This Button to Add One!</button>
 
+<button onclick="alert()">Click This Button to See Score!</button>
+
 <script>
 
     var num = 0;
 
     function addOne() {
         num++;
-        window.alert(num);
     }
+
+
+    function alert() {
+        window.alert("Your total is: " + num + "clicks!");
+    }
+
+
 
 </script>
 
